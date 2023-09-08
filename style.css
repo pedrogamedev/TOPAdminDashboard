@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito&display=swap');
+
+
+*
+{
+    margin: 0;
+}
+:root
+{
+    --sidebarColor: rgb(233, 233, 233);
+    --sidebarBackgroundColor: rgb(49, 94, 43);
+}
+body
+{
+    display: grid;
+    grid-template-columns: 300px minmax(150px, auto);
+    grid-template-rows: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sidebar
+{
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    color: var(--sidebarColor);  
+    background-color: var(--sidebarBackgroundColor);  
+
+}
+.sidebarTitle
+{
+    display: flex;
+    gap: 10px;
+}
+.sidebarTitle > img
+{
+    margin: 0;
+    width: 32px;
+    align-self: center;
+    height: 32px;
+}
+.sidebarTitle > h1
+{
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.dashLinks
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    gap: 10px;
+}
+.dashLinks > div
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dashLinks>div>h3
+{
+    font-weight: 300;
+}
+.dashLinks >div >img
+{
+    width: 24px;
+    height: 24px;
+}
+
