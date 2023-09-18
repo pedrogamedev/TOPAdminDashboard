@@ -81,7 +81,7 @@ body
     
     display: grid;
     grid-template-rows: 12% 10% 39% 39%;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 75% 25%;
 }
 
 .mainHead, .headerProfile
@@ -199,21 +199,22 @@ body
 
     grid-area: 3 / 2 / 4 / 3;
 }
-.announcementsContainer
+.announcementsContainer, .trendingContainer
 {
     flex: 0 1 100%;
-
     background-color: var(--mainBGColor);
-
-
-    padding: 10% 5% 5%;
-
     border-radius: 15px;
 
     box-shadow: 4px 5px 3px rgba(138, 138, 138, 0.5);
+ 
+    padding: 5% 5%;
 
     display: flex;
     flex-direction: column;
+}
+.announcementsContainer
+{
+    gap: 10px;
     justify-content: center;
 }
 
@@ -236,7 +237,13 @@ body
     border: solid rgb(180, 180, 180);
     border-width: 1px;
 }
+
 .trending
 {
     grid-area: 4 / 2 / 5 / 3;
+}
+
+.trendingContainer
+{
+    flex-basis: content;
 }
